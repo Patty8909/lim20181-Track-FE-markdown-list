@@ -1,4 +1,11 @@
+const path = require('path');
 
-export const mdlinks = () => {
-    console.log('hola desde node.js')
+const mdlinks = () => {
+    let ext = path.extname('README.md');
+    console.log(ext);
+
 }
+
+mdlinks()
+
+module.exports = mdlinks
